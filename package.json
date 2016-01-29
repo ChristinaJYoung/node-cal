@@ -2,7 +2,7 @@
   "name": "node-cal",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "cal.js",
   "scripts": {
     "test": "mocha --harmony_destructuring tests"
   },
@@ -19,5 +19,11 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.4"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "lodash": "^4.0.1"
   }
 }
