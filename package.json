@@ -4,7 +4,9 @@
   "description": "",
   "main": "cal.js",
   "scripts": {
-    "test": "mocha --harmony_destructuring tests"
+    "test": "mocha --harmony_destructuring --harmony_rest_parameters tests",
+    "cover": "node --harmony_destructuring ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha tests",
+    "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/ChristinaJYoung/node-cal#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.4"
   },
   "directories": {
